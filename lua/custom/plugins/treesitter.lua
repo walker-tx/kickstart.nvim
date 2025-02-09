@@ -51,7 +51,7 @@ return {
               query = '@function.outer',
               desc = 'Select [A]round a [M]ethod/Func',
             },
-            ['if'] = {
+            ['im'] = {
               query = '@function.inner',
               desc = 'Select [I]nside a [M]ethod/Func',
             },

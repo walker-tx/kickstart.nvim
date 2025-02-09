@@ -629,6 +629,8 @@ require('lazy').setup({
         pyright = {},
         gopls = {},
         phpactor = {},
+        astro = {},
+        tailwindcss = {},
         -- clangd = {},
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
@@ -732,6 +734,7 @@ require('lazy').setup({
         javascriptreact = { 'prettierd', 'prettier', stop_after_first = true },
         typescript = { 'prettierd', 'prettier', stop_after_first = true },
         typescriptreact = { 'prettierd', 'prettier', stop_after_first = true },
+        astro = { 'prettierd', 'prettier', stop_after_first = true },
       },
     },
   },
@@ -771,6 +774,8 @@ require('lazy').setup({
       --  into multiple repos for maintenance purposes.
       'hrsh7th/cmp-nvim-lsp',
       'hrsh7th/cmp-path',
+      'onsails/lspkind-nvim',
+      'tailwind-tools',
     },
     config = function()
       -- See `:help cmp`
@@ -953,6 +958,7 @@ require('lazy').setup({
   require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
   require 'custom.plugins.avante',
   require 'custom.plugins.typescript-tools',
+  require 'custom.plugins.tailwind-tools',
   require 'custom.plugins.treesitter',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
