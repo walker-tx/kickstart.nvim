@@ -960,6 +960,7 @@ require('lazy').setup({
   require 'custom.plugins.typescript-tools',
   require 'custom.plugins.tailwind-tools',
   require 'custom.plugins.treesitter',
+  require 'custom.plugins.search-next-indent',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
