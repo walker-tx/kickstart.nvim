@@ -4,7 +4,29 @@ return {
   lazy = false,
   version = false, -- Set this to "*" to always pull the latest release version, or set it to false to update to the latest code changes.
   opts = {
+    -- auto_suggest_provider = 'openai',
+    -- openai = {
+    --   model = 'o3-mini',
+    --   temperature = 0,
+    --   max_tokens = 4096,
+    -- },
+    auto_suggest_provider = 'gemini',
+    gemini = {
+      model = 'gemini-2.0-flash',
+    },
     -- add any opts here
+    behaviour = {
+      -- Experimental stage
+      auto_suggestions = true,
+      auto_set_highlight_group = true,
+      auto_set_keymaps = true,
+      auto_apply_diff_after_generation = false,
+      support_paste_from_clipboard = false,
+      -- Whether to remove unchanged lines when applying a code block
+      minimize_diff = true,
+      -- Whether to enable token counting. Default to true.
+      enable_token_counting = true,
+    },
   },
   -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
   build = 'make',
